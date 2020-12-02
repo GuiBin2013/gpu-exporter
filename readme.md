@@ -6,11 +6,11 @@ This is an prometheus exportor for nvidia gpu base metrics as well as metrics ab
 This exporter only support running inside a container.
 Before running this exporter, make sure docker can access to NVML. (nvidia-docker) 
 
-    docker run --pid=host -v /var/run/docker.sock:/var/run/docker.sock -p 9439:9439 registry.gz.cvte.cn/research-exporter/gpu-exporter:custom
+    docker run --pid=host -v /var/run/docker.sock:/var/run/docker.sock -p 9439:9439 vippor/gpu-exporter:latest
 
 If your docker version is lower, maybe you should run:
 
-    nvidia-docker run --pid=host -v /var/run/docker.sock:/var/run/docker.sock -p 9439:9439 registry.gz.cvte.cn/research-exporter/gpu-exporter:custom
+    nvidia-docker run --pid=host -v /var/run/docker.sock:/var/run/docker.sock -p 9439:9439 vippor/gpu-exporter:latest
 
 Environment:
     there are two env you can set
