@@ -14,6 +14,7 @@ If your docker version is lower, maybe you should run:
 
 Environment:
 there are two env you can set
+
     port: 9439   //  exporter http port, default 9439
     interval: 5   // how much interval to collect metrics, default 5 seconds
 
